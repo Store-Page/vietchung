@@ -108,6 +108,22 @@ dt { color: var(--muted); } dd { margin: 0; font-weight: 750; }
 
 a:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: 4px; }
 
+.legal { padding: 56px 0 96px; }
+.legal-shell { width: min(760px, calc(100% - 48px)); margin: 0 auto; }
+.legal-header { margin-bottom: 44px; }
+.legal-header .eyebrow { margin-bottom: 12px; }
+.legal-header h1 { font-size: clamp(32px, 4.5vw, 46px); margin-bottom: 10px; }
+.legal-meta { margin: 0; color: var(--muted); font-size: 14px; }
+.legal-body h2 { font-size: 22px; margin: 40px 0 14px; letter-spacing: -.02em; }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body h3 { font-size: 16px; margin: 24px 0 8px; }
+.legal-body p { margin: 0 0 14px; color: var(--muted); font-size: 16px; }
+.legal-body ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); font-size: 16px; }
+.legal-body li { margin-bottom: 8px; }
+.legal-body li strong { color: var(--ink); }
+.legal-body a { color: var(--accent); font-weight: 700; text-decoration: underline; }
+.legal-cross { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
+
 @media (prefers-color-scheme: dark) {
   :root { --ink: #e8eef5; --muted: #afbdcc; --line: #2b4056; --paper: #101b28; --surface: #152334; --accent: #47a0e9; --accent-deep: #74baf0; }
   .hero-image-wrap::before { background: #183b5c; }
